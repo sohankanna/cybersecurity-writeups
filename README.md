@@ -1,22 +1,49 @@
-# cybersecurity-writeups Writeups
-Welcome to my collection of cybersecurity-writeups writeups. This repository contains solutions and explanations for challenges from various platforms, organized by platform and event.
+# My Cybersecurity Write-ups & Portfolio
 
-## Structure
-The repository is organized into folders for each CTF platform, with subfolders for specific events or challenges:
+Welcome to my cybersecurity repository! This is a collection of my write-ups for Capture The Flag (CTF) challenges, security analysis from platforms like LetsDefend, and solutions for rooms on TryHackMe. The goal of this repository is to document my learning journey, share knowledge, and create a portfolio of my skills in both offensive and defensive security.
 
-- **PicoCTF/**: Writeups for PicoCTF challenges, organized by year or challenge name.
-- **TryHackMe/**: Writeups for TryHackMe rooms, organized by room name.
-- **HackTheBox/**: Writeups for HackTheBox challenges, grouped by category (e.g., Web, Pwn).
-- **Lets Defend/**: Writeups for Let'sDefend alerts and challenges.
+---
 
-## How to Navigate
-Each folder contains:
-- `writeup.md`: Detailed explanation of the challenge and solution.
-- `files/`: Supporting files like scripts, binaries, or screenshots.
-- `exploit.py` (or similar): Exploit code, if applicable.
+## Table of Contents
 
-## Contributing
-Feel free to open an issue or pull request if you have suggestions or want to collaborate on CTF challenges!
+You can navigate through the different sections of this repository using the links below.
+
+*   [PicoCTF Write-ups](#picoctf-write-ups)
+*   [LetsDefend - Security Analyst Alerts](#letsdefend---security-analyst-alerts)
+*   [TryHackMe Rooms](#tryhackme-rooms)
+*   [License](#license)
+
+---
+
+## PicoCTF Write-ups
+
+This directory contains my solutions and detailed explanations for challenges from various **PicoCTF** competitions. The write-ups are organized into sub-folders based on their category, such as `Forensics`, `Cryptography`, `Web Exploitation`, and more.
+
+**Browse the [`PicoCTF`](./PicoCTF/) directory to explore all the solutions.**
+
+## LetsDefend - Security Analyst Alerts
+
+Here, I document my analysis and response procedures for security alerts from the **[LetsDefend](https://letsdefend.io/)** platform. These write-ups cover my thought process for investigating, containing, and remediating potential threats, simulating the work of a Security Operations Center (SOC) Analyst.
+
+**Explore the [`LetsDefend`](./LetsDefend/) directory for detailed alert analyses.**
+
+## TryHackMe Rooms
+
+This section is dedicated to my write-ups for rooms on the **[TryHackMe](https://tryhackme.com/)** platform. It includes solutions for various challenges covering everything from basic networking and Linux skills to advanced penetration testing techniques.
+
+*(This section will be updated as rooms are completed.)*
+
+---
+
+## About Me
+
+My name is Sohan kanna, and I am a cybersecurity enthusiast passionate about both breaking and defending systems. This repository serves as a living document of my progress and projects.
+
+Feel free to connect with me!
+*   **LinkedIn:** [https://www.linkedin.com/in/sohan-kanna/]
+*   **Medium:** [https://medium.com/@sohankanna]
+*   **GitHub:** [https://github.com/sohankanna/sohankanna]
 
 ## License
-This repository is licensed under the MIT License. See [LICENSE](LICENSE) for details.
+
+This repository and its contents are licensed under the [MIT License](./LICENSE). You are free to use the code and information here for educational purposes.
