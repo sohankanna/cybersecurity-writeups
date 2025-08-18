@@ -118,7 +118,6 @@ The pHYs chunk stores the X and Y pixels per meter. The value for Y was 00 00 16
     The Goal: Change the corrupted byte to 00 to match the rest of the data and fix the checksum.
 
 In hexedit, I navigated to the line starting with 00000040 and changed the aa to 00.
-Fix #3: The Critical IDAT Chunk Repair
 
 This was the biggest problem. pngcheck also reported an "invalid chunk length (too large)". This pointed to a very serious structural error.
 
@@ -136,6 +135,43 @@ So, on the line starting with 00000050, I made the final changes:
 
 
 After making these changes, I saved the file by pressing Ctrl+X and then Y.
+
+#### Summary of all the changes made
+
+The changes are listed by their location (offset) in the file.
+1. PNG Signature Fix (The first 8 bytes)
+
+   At offset 0x01, we changed 65 to 50 (to form the 'P' in PNG).
+
+    At offset 0x03, we changed 34 to 47 (to form the 'G' in PNG).
+
+    At offset 0x06, we changed B0 to 1A.
+
+    At offset 0x07, we changed AA to 0A.
+
+2. IHDR Chunk Name Fix (The first chunk)
+
+    At offset 0x0C, we changed 43 to 49 (the 'I' in IHDR).
+
+    At offset 0x0D, we changed 22 to 48 (the 'H' in IHDR).
+
+3. pHYs Chunk Data Fix (Physical dimensions)
+
+    At offset 0x48, we changed aa to 00 (to correct the corrupted X-axis pixel density value).
+
+4. IDAT Chunk Fix (The main image data chunk)
+
+    Length Correction:
+
+      At offset 0x50, we changed aa to 00.
+
+      At offset 0x51, we changed aa to 00.
+
+    Name Correction:
+
+      At offset 0x53, we changed ab to 49 (the 'I' in IDAT).
+
+      At offset 0x56, we changed 45 to 41 (the 'A' in IDAT).
 
 
 With all the corrupted sections repaired, the file was now a structurally valid PNG. I opened it with Kali's default image viewer
