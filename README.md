@@ -25,7 +25,7 @@ This directory contains my solutions and detailed explanations for challenges fr
 
 Here, I document my analysis and response procedures for security alerts from the **[LetsDefend](https://letsdefend.io/)** platform. These write-ups cover my thought process for investigating, containing, and remediating potential threats, simulating the work of a Security Operations Center (SOC) Analyst.
 
-**Explore the [`LetsDefend`](./Let'sDefend/) directory for detailed alert analyses and malware deconstructions.**
+**Explore the [`LetsDefend`](./Lets'sDefend/) directory for detailed alert analyses and malware deconstructions.**
 
 ## TryHackMe Rooms
 
